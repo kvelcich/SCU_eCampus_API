@@ -12,4 +12,5 @@ Lastly, for cellphone notifications, the program uses the **Twilio API** for pyt
 ##How To Use
 ###   1. Install Python
     To install python, download and install a python version from [here.](https://www.python.org/downloads/)
+    [Quora profile link for Adam D'Angelo](http://www.quora.com/Adam-DAngelo)
 ###   2. Install pip
