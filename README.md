@@ -2,6 +2,11 @@
 
 Python functions to navigate and use SCU's eCampus.
 
+Example uses include:
+* Check if a class is open
+* Swap into a class
+* Enroll into a class
+
 ## Required Libraries
 This program is dependent on the python library **selenium**.
 
