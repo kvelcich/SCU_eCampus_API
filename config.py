@@ -1,16 +1,17 @@
 #Enter ecampus ID and
-actId = "W1106223"
-actPwd = "Belmont_96!"
+actId = ""
+actPwd = ""
 
-#For notifications
-destCellPhone = "+16508887362"
+#Enter Desination phone number for notifications.
+#Format: +16505550123
+destCellPhone = ""
 
 #Desired course to check, and class to be swapped
-classNum = "52116"
+classNum = ""
 #Course to be swapped
-swappedClass = "51842"
+swappedClass = ""
 
-#Twilio Information
-accountSid = "AC4352ad49482ec441936a3d12c7d0cc84"
-authToken = "3f7c0561bb8f6f58e2372afb702cd077"
-myTwilioNumber = "+16507275758"
+#Add Twilio Information for notifications
+accountSid = ""
+authToken = ""
+myTwilioNumber = ""
