@@ -16,7 +16,9 @@ To install python, download and install a python version from [here.](https://ww
 Next, in order to download the required libraries, install pip following the directions at [pypa.io](https://pip.pypa.io/en/stable/installing/).
 #### 3. Install Selenium
 Once pip is installed correctly, in order to install the selenium library simply run the following command in the terminal:
-        pip install selenium
+'''
+pip install selenium
+'''
 #### 4. [OPTIONAL] Install PyVirtualDisplay
 In order to run headless browsing, i.e. where the graphical UI isn't shown. To install, run the following command in the terminal:
         pip install pyvirtualdisplay
