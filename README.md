@@ -52,6 +52,7 @@ Lastly, you need to add your code to the main python file. By default, the main 
 #swapWhenOpen(55555, 55556, True, True)
 ```
 You can uncomment this line, and this code will attempt to swap the class 55556 for 55555 using headless browsing and notifications.
+
 To run, simply run the command:
 ```
 python main.py
