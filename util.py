@@ -77,7 +77,7 @@ def switchFrame(driver, frame):
 #Function that selects which quarter/session to check
 def selectSession(driver, session):
     print "Selecting quarter"
-    attemps = 0
+    attempts = 0
     while True:
         sleep(SLEEP_TIME_SHORT)
         try:
@@ -139,7 +139,7 @@ def swapAttempt(driver):
             attempts += 1
             if attempts == 10:
                 return False
-    attemps = 0
+    attempts = 0
     while True:
         sleep(SLEEP_TIME_SHORT)
         try:
