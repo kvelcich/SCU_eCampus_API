@@ -16,12 +16,14 @@ To install python, download and install a python version from [here.](https://ww
 Next, in order to download the required libraries, install pip following the directions at [pypa.io](https://pip.pypa.io/en/stable/installing/).
 #### 3. Install Selenium
 Once pip is installed correctly, in order to install the selenium library simply run the following command in the terminal:
-'''
-pip install selenium
-'''
+
+```pip install selenium
+```
+
 #### 4. [OPTIONAL] Install PyVirtualDisplay
 In order to run headless browsing, i.e. where the graphical UI isn't shown. To install, run the following command in the terminal:
-        pip install pyvirtualdisplay
+```pip install pyvirtualdisplay
+```
 #### 5. [OPTIONAL] Set Up Twilio
 * If you want to receive text notifications to your phone, then you will need to first create an account at [Twilio.com](https://www.twilio.com/try-twilio).
 * Copy down your Account SID and Authentification Token from the [console page](https://www.twilio.com/console).
