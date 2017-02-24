@@ -46,7 +46,7 @@ The file *config.py* contains specific user values for it to run.
 1. Enter your eCampus account ID and password in actId and actPwd respectively.
 2. If you want to receive phone notifications, enter your phone number into the destCellPhone variable and enter your Twilio phone number, account SID, and authentification token into myTwilioNumber, accountSid and authToken.
 
-#### Edit Main, and Run
+#### 8. Edit Main, and Run
 Lastly, you need to add your code to the main python file. By default, the main file includes the following code:
 ```
 #swapWhenOpen(55555, 55556, True, True)
