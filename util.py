@@ -1,14 +1,10 @@
 from config import *
 from values import *
-
 import time
-
 from twilio.rest import TwilioRestClient
-
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
-
 from pyvirtualdisplay import Display
 
 #Enables headless browsing
@@ -171,14 +167,16 @@ def swapFeedback(driver):
                 return ""
 
 #Function that notifies based on the swap feedback messages
-def swapNotify(driver, enrollMsg):
+def swapNotify(driver, enrollMsg, notifications):
     if enrollMsg[:5] in ['Error']:
         print "Error enrolling."
-        notify("Error enrolling in course...")
-        notify(enrollMsg)
+        if notifications:
+            notify("Error enrolling in course...")
+            notify(enrollMsg)
     else:
         print "Successfully enrolled!"
-        notify("Success in enrolling!")
+        if notifications:
+            notify("Success in enrolling!")
 
 #Function that checks the class capacity. Returns the class size information text
 def checkCapacity(driver):

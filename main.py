@@ -1,3 +1,3 @@
 from api import *
 
-#swapWhenOpen(classNum, swappedClass, True)
+#swapWhenOpen(classNum, swappedClass, True, True)

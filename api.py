@@ -1,7 +1,7 @@
 from util import *
 
 #Function continuously checks until a course is opens. Once it it is, attempts to swap.
-def swapWhenOpen(courseIn, courseOut, headless):
+def swapWhenOpen(courseIn, courseOut, headless, notifications):
     if (headless):
         headlessBrowsing()
 
@@ -9,8 +9,9 @@ def swapWhenOpen(courseIn, courseOut, headless):
         open = isOpen(courseIn)
         if open:
             print "Course is open."
-            notifyTimes("Course " + courseIn + " is currently open...", 3)
-            notify("Attempting to swap into " + courseIn + "...")
+            if notifications:
+                notifyTimes("Course " + courseIn + " is currently open...", 3)
+                notify("Attempting to swap into " + courseIn + "...")
             swap(courseIn, courseOut)
             break
         else:
@@ -48,7 +49,7 @@ def isOpen(courseIn):
     return open
 
 #Function attempts to swap a course.
-def swap(courseIn, courseOut):
+def swap(courseIn, courseOut, notifications):
     driver = loadPage(url)
     login(driver)
 
@@ -78,7 +79,7 @@ def swap(courseIn, courseOut):
         return swap(courseIn, courseOut)
 
     enrollMsg = swapFeedback(driver)
-    swapNotify(driver, enrollMsg)
+    swapNotify(driver, enrollMsg, notifications)
 
     print "Ending session..."
     driver.quit()
