@@ -1,5 +1,5 @@
-from config import *
-from values import *
+from values.config import *
+from values.values import *
 import time
 from twilio.rest import TwilioRestClient
 from selenium import webdriver
