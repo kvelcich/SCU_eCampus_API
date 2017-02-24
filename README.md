@@ -3,7 +3,7 @@
 Python functions to navigate and use SCU's eCampus.
 
 ##Required Libraries
-
+1. #### Selenium
 This program is dependent on the python library **selenium**.
 
 In order to use headless browsing, the program uses the python library **pyvirtualdisplay**.
