@@ -38,4 +38,17 @@ pip install pyvirtualdisplay
 * Copy down your Account SID and Authentification Token from the [console page](https://www.twilio.com/console).
 * Lastly, get a Twilio phone number, by going [here](https://www.twilio.com/console/phone-numbers/getting-started), and then clicking "Get your first Twilio phone number". Keep note of the number you selected.
 
-#### 6. 
+#### 6. Download Files
+
+#### 7. Edit config.py values
+The file *config.py* contains specific user values for it to run.
+1. Enter your eCampus account ID and password in actId and actPwd respectively.
+2. If you want to receive phone notifications, enter your phone number into the destCellPhone variable and enter your Twilio phone number, account SID, and authentification token into myTwilioNumber, accountSid and authToken.
+
+#### Edit Main, and Run
+Lastly, you need to add your code to the main python file. By default, the main file includes the following code:
+```
+#swapWhenOpen(55555, 55556, True, True)
+```
+You can uncomment this line, and this code will attempt to swap the class 55556 for 55555 using headless browsing and notifications.
+* For more information on the functions and API, please refer to the [wiki.](https://github.com/kvelcich/SCU_eCampus_API/wiki)
