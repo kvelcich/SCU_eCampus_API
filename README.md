@@ -42,6 +42,7 @@ pip install pyvirtualdisplay
 
 #### 7. Edit config.py values
 The file *config.py* contains specific user values for it to run.
+
 1. Enter your eCampus account ID and password in actId and actPwd respectively.
 2. If you want to receive phone notifications, enter your phone number into the destCellPhone variable and enter your Twilio phone number, account SID, and authentification token into myTwilioNumber, accountSid and authToken.
 
